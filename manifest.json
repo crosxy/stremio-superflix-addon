@@ -1,0 +1,14 @@
+{
+  "id": "dev.superflix.addon",
+  "version": "1.0.0",
+  "name": "SuperFlix Addon",
+  "description": "Addon para Stremio que integra com SuperFlixAPI para filmes e séries.",
+  "logo": "https://superflixapi.dev/logo.png",
+  "resources": ["catalog", "meta", "stream"],
+  "types": ["movie", "series"],
+  "catalogs": [
+    { "type": "movie", "id": "superflix-movies", "name": "SuperFlix Filmes", "extra": [{"name":"search","isRequired":false}] },
+    { "type": "series", "id": "superflix-series", "name": "SuperFlix Séries", "extra": [{"name":"search","isRequired":false}] }
+  ],
+  "contactEmail": "email@dominio.com"
+}
